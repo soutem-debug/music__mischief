@@ -3,7 +3,7 @@ title: The benefits of wild camping
 author: Emma Southam
 date: 2022-08-05
 tags: ["post", "featured"]
-image: /assets/blog/article-1.jpg
+image: /assets/blog/article-5.jpg
 imageAlt: Wild camping
 description: In this article, we'll explore the mental health benefits of camping with your dog in the wild and how foraging for dinner can add to the adventure.
 ---
