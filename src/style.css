@@ -578,7 +578,7 @@ section,
 	min-height: 150px;
 }
 
-.btn {
+.contact-btn {
 	width: 100%;
 	padding: 0.5rem 1rem;
 	background-color: #2ecc71;
@@ -590,7 +590,7 @@ section,
 	transition: .3s;
 }
 
-.btn:hover{
+.contact-btn:hover{
     background-color: #27ae60;
 }
 
