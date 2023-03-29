@@ -213,63 +213,116 @@ section,
   Header
   /////////////////////// */
 
-.page-header {
-  padding: 2em 0;
-}
+  .box-area {
+    font-family: summary-notes, sans-serif;
+    text-align: center;
 
-.page-header__content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo {
-  position: absolute;
-  top: 2%;
-  left: 4%;
-  bottom: 10%;
-  /* padding: ; */
-  z-index: 999;
-}
-
-.logo-image {
-  max-width: 100%;
-  height: 10%;
-}
-
-/* Navigation Bar */
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  font-family: summary-notes, sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  }
   
-}
+  .wrapper {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    
+  }
 
-.nav-list {
-  margin: 0;
-  padding: 0;
-  /* word-spacing: 40px; */
-  
-}
+  .page-header {
+    background-color: brown;
+    height: 100px;
+    position: fixed;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    }
 
-.nav-list a {
-  color: var(--clr-primary-600);
-  text-decoration: none;
-  
-}
+    /* Logo */
 
-.nav-list a:focus,
-.nav-list a:hover {
-  color: var(--clr-primary-400);
-  text-decoration: underline;
-}
+    .logo {
+      float: left;
+      margin-top: 1%;
+      padding-right: 1%;
+    
+    }
+
+    .logo-text 
+    {
+      float: left;
+      line-height: 100px;
+      text-align: left;
+    }
+
+    .logo-text a {
+      text-decoration: none;
+      font-size: 30px;
+      font-family: summary-notes, sans-serif;
+      letter-spacing: 0.1rem;
+      color: aquamarine;
+    }
+
+    /* Nav bar */
+
+    .nav-bar {
+      float: right;
+      line-height: 100px;
+
+    }
+
+    .nav-bar a {
+      color: beige;
+      font-family: poppins, sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-decoration: none;
+
+    }
+
+    .nav-list a:focus,
+    .nav-list a:hover {
+      color: var(--clr-primary-400);
+      text-decoration: underline;
+    }
+    
+/* Cover image  */
+
+
+    .banner-area {
+      background-image: url(/assets/blog/contact-b.jpg);
+      background-size: cover;
+      background-position: center center;
+      text-align: center;
+      top: 100px;
+      height: 80vh;
+      /* position: fixed; */
+      width: 100%;
+    }
+
+    .banner-area:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      /* background: navy; */
+      opacity: 0;
+      z-index: -1;
+
+    }
+
+    .banner-area h2 {
+      padding-top: 10%;
+      font-size: 80px;
+      color: beige;
+    }
+
+    /* .main-content-area {
+      width: 100%;
+      height: 800px;
+      position: relative;
+
+    } */
 
 /* //////////////////////
   Footer
@@ -441,3 +494,6 @@ nav a {
   color: var(--clr-neutral-100);
   background-color: var(--clr-neutral-900);
 }
+
+/* Contact Page */
+
