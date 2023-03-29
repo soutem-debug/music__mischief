@@ -28,10 +28,11 @@
   --fw-700: 700;
   --fw-900: 900;
 
-  --clr-primary-200: hsla(169, 70%, 95%, 1);
-  --clr-primary-300: hsla(169, 100%, 39%, 1);
-  --clr-primary-400: hsla(169, 100%, 26%, 1);
-  --clr-primary-500: hsla(169, 100%, 16%, 1);
+  --clr-primary-200: hsla(0, 00%, 100%, 1);
+  --clr-primary-300: hsla(181, 94%, 34%, 1);
+  --clr-primary-400: hsla(10, 97%, 56%, 1);
+  --clr-primary-500: hsla(321, 13%, 25%, 1);
+  --clr-primary-600: hsla(203, 63%, 20%, 1); 
 
   --clr-neutral-100: hsla(0, 0%, 100%, 1);
   --clr-neutral-300: hsla(0, 0%, 50%, 1);
@@ -196,7 +197,7 @@ section,
 
 .article-title,
 .section-title {
-  color: var(--clr-primary-500);
+  color: var(--clr-primary-600);
 }
 
 .article-title {
@@ -259,7 +260,7 @@ nav a {
 }
 
 .nav-list a {
-  color: var(--clr-neutral-900);
+  color: var(--clr-primary-600);
   text-decoration: none;
   
 }
@@ -278,8 +279,13 @@ nav a {
   --logo-color: currentColor;
   padding: 2em 0;
   color: var(--clr-neutral-100);
-  background-color: var(--clr-primary-500);
+  background-color: var(--clr-primary-600);
   text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100;
 }
 
 /* //////////////////////
@@ -287,6 +293,7 @@ nav a {
   /////////////////////// */
 
 .hero > div {
+  background-color: var(--clr-primary-200);
   display: grid;
   grid-auto-flow: row;
   grid-auto-columns: 1fr;
@@ -307,7 +314,7 @@ nav a {
 }
 
 .featured-articles {
-  background-color: var(--clr-primary-200);
+  background-color: var(--clr-primary-300);
 }
 
 .articles__list {
