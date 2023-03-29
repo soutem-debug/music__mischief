@@ -8,21 +8,24 @@ layout: 'base.njk'
         <div class="contact-left"></div>
         <div class="contact-right">
             <h2>Sign up today!</h2>
-    <form name="contact-page"  method="POST" data-netlify="true">   
+
+    
+    <form method="POST" name="contact-page"  data-netlify="true" onSubmit="submit">
+
     <label for="first-name">First Name:</label>
-      <input type="text" class="contact-field" id="first-name" name="first-name" required><br><br>
+      <input type="text" class="contact-field" name="first-name" required><br><br>
       
       <label for="surname">Surname:</label>
-      <input type="text" class="contact-field" id="surname" name="surname" required><br><br>
+      <input type="text" class="contact-field" name="surname" required><br><br>
       
-      <label for="email">Email:</label>
-      <input type="email" class="contact-field" id="email" name="email" required><br><br>
+      <label for="inputEmail">Email:</label>
+      <input type="email" class="contact-field" name="email" required><br><br>
       
       <label for="message">Message:</label><br>
-      <textarea id="message" class="contact-field" name="message" rows="4" cols="50" required></textarea><br><br>
+      <textarea class="contact-field" name="message" rows="4" cols="50" required></textarea><br><br>
       
       <label for="terms">I accept the <a href="#">terms and conditions</a>:</label>
-      <input type="checkbox" class="contact-field" id="terms" name="terms" required><br><br>
+      <input type="checkbox" class="contact-field" name="terms" required><br><br>
       
       <input type="submit" name="submit" class="contact-btn">
       
